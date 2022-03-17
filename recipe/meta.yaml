@@ -20,13 +20,13 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - make
+    - cmake
   host:
     - python
     - pip
     - setuptools
     - wheel
     - scikit-build
-    - cmake >=3.18
     - ninja
   run:
     - python
