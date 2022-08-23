@@ -1,5 +1,5 @@
 {% set name = "numbalsoda" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Nicholaswogan/numblsoda/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6b0ee980d3b39882bf952488b452663b206da5fff04b27bdfb5fad563fdd89ce
+  sha256: cf028966824404bd1af84c63b30d6a825fc70bce38ebd64d39843de254f390bd
 
 build:
   number: 1
@@ -19,6 +19,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
+    - {{ compiler('fortran') }}
     - make
     - cmake
   host:
