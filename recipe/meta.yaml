@@ -10,7 +10,7 @@ source:
   sha256: 3c89d565dbc6d5caf47fec702bc96a47bd13aee0d873d0c0ba03c06ac95c6745
   patches:
     - newer-fortran-standard.patch
-
+ 
 build:
   number: 2
 
